@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardianto</title>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <aside class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> Tentang Saya</a></li>
+                <li><a href="#project"><i class="fas fa-project-diagram"></i> Project</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+        </nav>
+        <button id="close-sidebar" class="close-btn"><i class="fas fa-times"></i></button>
+    </aside>
+    <header>
+        <div class="logo">
+            <h1>Hardi<span>anto</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="open-sidebar" class="open-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <main>
+        <div class="content">
+
+            <section class="about" id="about">
+                <article class="content-description">
+                    <h1 class="title">Hardianto</h1>
+                    <p>Saya seorang mahasiswa universitas Dipa Makassar. Saya memiliki minat di bidang IT. Awal mula
+                        saya
+                        tertarik dengan dunia IT, saat menempuh jenjang SMA di SMAN 7 Pinrang, saat itu tertarik pada
+                        pengembangan WhatsApp bot dan otomatisasi sistem.</p>
+                    <button>Lebih lanjut</button>
+                </article>
+                <figure class="content-image">
+                    <img src="assets/image/my_photo.jpg" alt="Hardianto's photo">
+                </figure>
+            </section>
+
+            <section id="project" class="project">
+                <header class="content-description">
+                    <h2 class="title">Project</h2>
+                    <p>Ini adalah project yang saya kerjakan</p>
+                </header>
+                <div class="project-list">
+                    <article class="card">
+                        <div class="card-content">
+                            <h3 class="title">WhatsApp Bot</h3>
+                            <figure>
+                                <img src="/assets/image/gambar-whatsapp-bot.png" alt="WhatsApp bot project">
+                            </figure>
+                            <p>Ini adalah karya awal saya, bot WhatsApp dengan berbagai fitur dan mudah digunakan.</p>
+                            <button>Visit</button>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-content">
+                            <h3 class="title">Rest API</h3>
+                            <figure>
+                                <img src="/assets/image/rest-api-icon.png" alt="Rest API project">
+                            </figure>
+                            <p>Project yang membuat saya dikenal karena populer di kalangan developer bot WhatsApp lain
+                                dan
+                                digunakan oleh publik. Project ini berakhir pada 2022 karena kebijakan Heroku dan
+                                banyaknya
+                                public API membuat project ini tidak dilanjutkan lagi.</p>
+                            <button>Visit</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <aside class="profile-aside">
+                <h3>Tech Stack</h3>
+                <div class="tech-stack">
+                    <i class="fab fa-python" title="Python"></i>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go"
+                        title="Golang">
+                    <i class="fab fa-node-js" title="Node.js"></i>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                        alt="C++" title="C++">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"
+                        title="Java">
+                    <i class="fab fa-react" title="React"></i>
+                </div>
+            </aside>
+        </div>
+
+    </main>
+
+    <footer>
+        <section id="contact" class="contact-section">
+            <header class="content-description">
+                <h2 class="title">Contact</h2>
+                <p>Have any questions? Feel free to reach out to us!</p>
+            </header>
+            <form class="contact-form" action="submit_form.php" method="post">
+                <div>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+
+        <div class="helper">
+            <ul class="social-media">
+                <li><a href="https://www.youtube.com/@hardianto01"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://linkedin.com/in/hardianto01/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/hardianto01/"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/antojago02"><i class="fab fa-facebook"></i></a></li>
+            </ul>
+        </div>
+
+        <p>Made with ❤️ || <a href="https://hardianto.vercel.app">hardianto 2024</a></p>
+    </footer>
+    <script src="/assets/styles/main.js"></script>
+    
+</body>
+
+</html>
